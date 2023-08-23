@@ -28,7 +28,6 @@ ap.add_argument("-d", "--pdf", required=True, help="path to input pdf")
 args = vars(ap.parse_args())
 
 results = pmp.parse_pdf(args['pdf'])
-#results = pmp.parse_pdf("/Users/georgiachan/MMX/Manifests/Research_5_Projects_100K_Gs_Greater_Manchester_set2_Box1.pdf")
 
 SlideNumbers = pmp.extract_slide_numbers(results[1])
 ThumbnailStrings = pmp.extract_slide_info_image(results[0])
